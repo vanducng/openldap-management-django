@@ -117,7 +117,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '/home/vanducng/git/django-ldap-user-registration/django_ldap_user_registration/logs/app.log',
+            'filename': './django_ldap_user_registration/logs/app.log',
             'formatter': 'simple'
         },
     },
