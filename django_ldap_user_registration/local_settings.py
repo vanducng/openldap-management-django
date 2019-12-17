@@ -20,7 +20,7 @@ IDP_LOGO = 'http://www.homecredit.vn/img/logo-hc-main.png'  # Width of 200px at 
 
 # Test service provider
 SERVICE_PROVIDER = 'Test service provider'
-SERVICE_PROVIDER_URL = 'https://itbi-group.com'
+SERVICE_PROVIDER_URL = 'https://grafana.itbi-group.com/'
 
 # This setting enables capturing of a users institution and country details
 IDP_CATCH_ALL = False
