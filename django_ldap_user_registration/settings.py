@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 's77o2h44iieig-5m&j1zdx0l+(c67jwu-vm1p9+ycul6lp@o$d'
 
-ALLOWED_HOSTS = ["127.0.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1", "itbi-group.com", "localhost"]
 
 
 # Application definition
