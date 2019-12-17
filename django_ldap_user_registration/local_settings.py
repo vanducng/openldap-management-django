@@ -2,7 +2,7 @@ import os
 import sys
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # a clean way to find out if we are in unit test mode
 # we look for both direct testing with django and for pytest which is also used by coverage
