@@ -16,7 +16,7 @@ TIME_ZONE = 'Asia/Ho_Chi_Minh'
 
 # IDP Details
 IDP_NAME = 'IBIT Team'
-IDP_LOGO = 'http://www.homecredit.vn/img/logo-hc-main.png'  # Width of 200px at least
+IDP_LOGO = '//homecredit.vn/img/logo-hc-main.png'  # Width of 200px at least
 
 # Test service provider
 SERVICE_PROVIDER = 'Test service provider'

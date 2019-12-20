@@ -9067,3 +9067,61 @@ Traceback (most recent call last):
     (bit, current))  # missing attribute
 django.template.base.VariableDoesNotExist: Failed lookup for key [LANGUAGE_CODE] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fc053532268>>, 'request': <WSGIRequest: GET '/user/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fc0535321e0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fc0534c4160>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fc0534c4e80>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'settings': {'RECAPTCHA_PUBLIC_KEY': '6Le9-ccUAAAAAEONxfu5sMDym-ExJt1OMSp_CIFw', 'IDP_NAME': 'IBIT Team', 'IDP_LOGO': 'http://www.homecredit.vn/img/logo-hc-main.png', 'SERVICE_PROVIDER': 'Test service provider', 'SERVICE_PROVIDER_URL': 'https://grafana.itbi-group.com/', 'STATIC_URL': '/static/', 'LANGUAGE_CODE': 'en-us', 'SITE_BASE_URL': 'https://itbi-group.com'}}, {}, {'view': <dl_user.views.IndexView object at 0x7fc0534c4320>}]
 INFO "GET /user/ HTTP/1.1" 200 2309
+DEBUG Exception while resolving variable 'LANGUAGE_CODE' in template 'dl_user/home.html'.
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-y8kvf09C/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-y8kvf09C/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-y8kvf09C/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-y8kvf09C/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-y8kvf09C/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [LANGUAGE_CODE] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7face69d7f28>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7face6a301e0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7face6141400>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7facebcfde10>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'settings': {'RECAPTCHA_PUBLIC_KEY': '6Le9-ccUAAAAAEONxfu5sMDym-ExJt1OMSp_CIFw', 'IDP_NAME': 'IBIT Team', 'IDP_LOGO': 'http://www.homecredit.vn/img/logo-hc-main.png', 'SERVICE_PROVIDER': 'Test service provider', 'SERVICE_PROVIDER_URL': 'https://grafana.itbi-group.com/', 'STATIC_URL': '/static/', 'LANGUAGE_CODE': 'en-us', 'SITE_BASE_URL': 'https://itbi-group.com'}}, {}, {'view': <dl_user.views.IndexView object at 0x7facebcfd550>}]
+INFO "GET / HTTP/1.1" 200 2309
+DEBUG Exception while resolving variable 'LANGUAGE_CODE' in template 'dl_user/home.html'.
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-y8kvf09C/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-y8kvf09C/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-y8kvf09C/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-y8kvf09C/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-y8kvf09C/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [LANGUAGE_CODE] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7fc1886a8f28>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7fc1887011e0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7fc187e0d400>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7fc1889911d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'settings': {'RECAPTCHA_PUBLIC_KEY': '6Le9-ccUAAAAAEONxfu5sMDym-ExJt1OMSp_CIFw', 'IDP_NAME': 'IBIT Team', 'IDP_LOGO': '//homecredit.vn/img/logo-hc-main.png', 'SERVICE_PROVIDER': 'Test service provider', 'SERVICE_PROVIDER_URL': 'https://grafana.itbi-group.com/', 'STATIC_URL': '/static/', 'LANGUAGE_CODE': 'en-us', 'SITE_BASE_URL': 'https://itbi-group.com'}}, {}, {'view': <dl_user.views.IndexView object at 0x7fc188991160>}]
+INFO "GET / HTTP/1.1" 200 2300
