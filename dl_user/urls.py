@@ -14,4 +14,4 @@ urlpatterns = [
     path('password/reset/success/', views.PasswordResetSuccessView.as_view(), name='password_reset_success'),
     path('password/edit/success/', views.PasswordEditSuccessView.as_view(), name='password_edit_success'),
     path('password/edit/<slug:token>/', views.PasswordEditView.as_view(), name='password_edit'),
-    ]
+]

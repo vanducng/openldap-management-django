@@ -15,7 +15,7 @@ from .ldap import LDAPOperations
 
 
 class UserRegisterForm(forms.Form):
-    title_choices = (('Mr.', 'Mr'), ('Ms', 'Ms',), ('Mrs.', 'Mrs.',), ('Dr.', 'Dr.',), ('Prof.', 'Prof.',),)
+    title_choices = (('Mr.', 'Mr'), ('Ms', 'Ms',), ('Mrs.', 'Mrs.',),)
     # optional schema fields during registration
     if "Personal Data" in settings.LDAP_USER_DATA:
         gender = forms.TypedChoiceField(
@@ -42,7 +42,7 @@ class UserRegisterForm(forms.Form):
     username = forms.CharField(required=True,
                                min_length=3,
                                max_length=30,
-                               help_text='Choose a memorable name e.g jdoe',
+                               help_text='Use your LDAP account e.g duc.nguyenv3',
                                validators=[UnicodeUsernameValidator()])
     email = forms.EmailField(required=True)
     password = forms.CharField(widget=forms.PasswordInput, min_length=8)

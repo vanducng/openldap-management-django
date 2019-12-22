@@ -13,7 +13,7 @@
 		    <span class="icon-bar"></span>
 		    <span class="icon-bar"></span>
 		</button>
-                <a class="navbar-brand" href="{% url 'dl_user:home' %}">{{ settings.IDP_NAME }} User Support</a>
+                <a class="navbar-brand" href="{% url 'dl_user:home' %}">{{ settings.IDP_NAME }}</a>
 	    </div>
 	    <div id="navbar" class="collapse navbar-collapse">
 		<ul class="nav navbar-nav">
@@ -21,14 +21,13 @@
 		    <li class="active"><a href="{% url 'dl_user:home' %}">Home</a></li>
 		    <li><a href="{% url 'dl_user:register' %}">Register</a></li>
 		    <li><a href="{% url 'dl_user:password_reset' %}">Change password</a></li>
-                
 		</ul>
 	    </div><!-- /.nav-collapse -->
 	</div><!-- /.container -->
     </nav><!-- /.navbar -->
     <div class="container">
 	<div class="jumbotron">
-            {% autoescape off %}{% bootstrap_messages %}{% endautoescape %}
+    {% autoescape off %}{% bootstrap_messages %}{% endautoescape %}
 	    <a href="{% url 'dl_user:home' %}"><img class="img-fluid" src="{{settings.IDP_LOGO}}" alt="{{settings.IDP_NAME}}" /></a>
     {% block content %}
     {% endblock %}

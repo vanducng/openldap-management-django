@@ -1,11 +1,12 @@
 {% extends 'dl_user/base.html' %}
-{% load bootstrap3 %}
-{% block bootstrap3_title %}{{ settings.IDP_NAME }} User Support{% endblock %}
+{% load bootstrap3 static %}
+{% block bootstrap3_title %} ITBI Hub{% endblock %}
 {% block content %}
-            <h2>{{ settings.IDP_NAME }} User Support</h2>
-	    <p>Wanna change password or register a new account to access ITBI Services? This page is for you</p>
-	</div>
-	{% comment %} <div class="row">
+    <h2>ITBI Hub from Home Credit Vietnam</h2>
+    <h4>Register to access ITBI Hub services, or <a href="mailto:admin@itbi-group.com?Subject=Access request to ITBI Hub" target="_top"> email admin </a> for further assistant!</h4>
+
+	{% comment %} </div>
+	<div class="row">
 	    <div class="col-xs-6 col-lg-6">
 		<h3>Registration of a new account</h3>
                 {% bootstrap_button "Register" button_type="link" size="lg" button_class="btn-success" icon="user" href=register_url %}
@@ -16,11 +17,62 @@
                 {% bootstrap_button "Password change" button_type="link" size="lg" button_class="btn-warning" icon="info-sign" href=password_reset_url %}
 	    </div>
 	</div>
-	<hr> {% endcomment %}
+	{% endcomment %}
+<hr> 
+    <div class="container"> 
+        <div class="card-group"> 
+  
+            <!--bootstrap card with 3 horizontal images-->
+            <div class="row"> 
+                <div class="card col-md-3 text-center" >
+                    <a href="https://grafana.itbi-group.com" target="_blank"> 
+                        <img class="card-img-top" style="height: 80px;" src="{% static "/images/grafana_logo.png" %}"> 
+                        <h3 class="card-title">Grafana</h3> 
+                    </a>
+                    <h5 class="card-text ">Monitor application & infrastructure metrics in time-series manner.</h5> 
+                    
+                </div> 
+
+                <div class="card col-md-3 text-center" >
+                    <a href="https://kibana.itbi-group.com" target="_blank"> 
+                        <img class="card-img-top" style="height: 80px;" src="{% static "/images/kibana_logo.png" %}"> 
+                        <h3 class="card-title">Kibana</h3> 
+                    </a>
+                    <h5 class="card-text ">Explore, analize & manage Elasticsearch database.</h5> 
+                    
+                </div>
+
+                <div class="card col-md-3 text-center" >
+                    <a href="https://jupyter.itbi-group.com" target="_blank"> 
+                        <img class="card-img-top" style="height: 80px;" src="{% static "/images/jupyterhub_logo.png" %}"> 
+                        <h3 class="card-title">Jupyter Hub</h3> 
+                    </a>
+                    <h5 class="card-text ">Development land with Jupyter as a service</h5>
+                </div>
+
+                <div class="card col-md-3 text-center" >
+                    <a href="https://vscode.itbi-group.com" target="_blank"> 
+                        <img class="card-img-top" style="height: 80px;" src="{% static "/images/code_server_logo.png" %}"> 
+                        <h3 class="card-title">Code Server</h3> 
+                    </a>
+                    <h5 class="card-text ">Development land with VS Code as a service</h5> 
+                    
+                </div>
+
+
+
+  
+                
+            </div> 
+        </div> 
+    </div> 
+
 	{% comment %} <footer>
 	    <p>If you already have a Federated ID, you can test your login credentials at:
                 {% bootstrap_button settings.SERVICE_PROVIDER button_type="link" size="sm" href=settings.SERVICE_PROVIDER_URL %}
 	    </p>
 	</footer> {% endcomment %}
+
+    
     
 {% endblock %}

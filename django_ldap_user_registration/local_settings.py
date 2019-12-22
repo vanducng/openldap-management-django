@@ -15,7 +15,7 @@ SITE_BASE_URL = 'https://itbi-group.com'  # No trailing slash
 TIME_ZONE = 'Asia/Ho_Chi_Minh'
 
 # IDP Details
-IDP_NAME = 'IBIT Team'
+IDP_NAME = 'ITBI Hub'
 IDP_LOGO = '//homecredit.vn/img/logo-hc-main.png'  # Width of 200px at least
 
 # Test service provider
