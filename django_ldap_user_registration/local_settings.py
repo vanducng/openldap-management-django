@@ -19,7 +19,7 @@ IDP_NAME = 'ITBI Hub'
 IDP_LOGO = '//homecredit.vn/img/logo-hc-main.png'  # Width of 200px at least
 
 # Test service provider
-SERVICE_PROVIDER = 'Test service provider'
+SERVICE_PROVIDER = 'Try on Grafana Signin'
 SERVICE_PROVIDER_URL = 'https://grafana.itbi-group.com/'
 
 # This setting enables capturing of a users institution and country details
@@ -69,6 +69,7 @@ EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = IDP_NAME + ' <admin@itbi-group.com>'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+# BOOTSTRAP3 = {'theme_url': 'https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css', }
 
 SETTINGS_EXPORT = [
     'RECAPTCHA_PUBLIC_KEY',
