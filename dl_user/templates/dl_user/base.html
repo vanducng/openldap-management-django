@@ -28,7 +28,7 @@
     <div class="container">
 	<div class="jumbotron">
     {% autoescape off %}{% bootstrap_messages %}{% endautoescape %}
-	    <a href="{% url 'dl_user:home' %}"><img class="img-fluid" src="{{settings.IDP_LOGO}}" alt="{{settings.IDP_NAME}}" /></a>
+	    <!-- <a href="{% url 'dl_user:home' %}"><img class="img-fluid" src="{{settings.IDP_LOGO}}" alt="{{settings.IDP_NAME}}" /></a> -->
     {% block content %}
     {% endblock %}
 {% endblock %}
