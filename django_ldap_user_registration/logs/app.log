@@ -16511,3 +16511,179 @@ WARNING Not Found: /static/images/superset_logo.png
 WARNING "GET /static/images/superset_logo.png HTTP/1.1" 404 105
 WARNING "GET /static/images/code_server_logo.png HTTP/1.1" 404 108
 WARNING "GET /static/images/roundcube_logo.png HTTP/1.1" 404 106
+DEBUG Exception while resolving variable 'LANGUAGE_CODE' in template 'dl_user/home.html'.
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [LANGUAGE_CODE] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7ff4c3460d40>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7ff4cd674ef0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7ff4c2ba6f50>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7ff4c3518050>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'settings': {'RECAPTCHA_PUBLIC_KEY': '6Le9-ccUAAAAAEONxfu5sMDym-ExJt1OMSp_CIFw', 'IDP_NAME': 'ITBI Hub', 'IDP_LOGO': '//homecredit.vn/img/logo-hc-main.png', 'SERVICE_PROVIDER': 'Try on Grafana Signin', 'SERVICE_PROVIDER_URL': 'https://grafana.itbi-group.com/', 'STATIC_URL': '/static/', 'LANGUAGE_CODE': 'en-us', 'SITE_BASE_URL': 'https://itbi-group.com'}}, {}, {'view': <dl_user.views.IndexView object at 0x7ff4c3518150>}]
+INFO "GET / HTTP/1.1" 200 5702
+WARNING Not Found: /static/images/grafana_logo.png
+WARNING Not Found: /static/images/jupyterhub_logo.png
+WARNING Not Found: /static/images/code_server_logo.png
+WARNING Not Found: /static/images/kibana_logo.png
+WARNING Not Found: /static/images/superset_logo.png
+WARNING "GET /static/images/jupyterhub_logo.png HTTP/1.1" 404 107
+WARNING Not Found: /static/images/roundcube_logo.png
+WARNING "GET /static/images/grafana_logo.png HTTP/1.1" 404 104
+WARNING "GET /static/images/kibana_logo.png HTTP/1.1" 404 103
+WARNING "GET /static/images/code_server_logo.png HTTP/1.1" 404 108
+WARNING "GET /static/images/superset_logo.png HTTP/1.1" 404 105
+WARNING "GET /static/images/roundcube_logo.png HTTP/1.1" 404 106
+WARNING Not Found: /static/images/airflow_logo.png
+WARNING "GET /static/images/airflow_logo.png HTTP/1.1" 404 104
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 85
+DEBUG Exception while resolving variable 'LANGUAGE_CODE' in template 'dl_user/home.html'.
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [LANGUAGE_CODE] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7ff4c2b4bb90>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7ff4c2b4ba70>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7ff4c28c76d0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7ff4c28c0fd0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'settings': {'RECAPTCHA_PUBLIC_KEY': '6Le9-ccUAAAAAEONxfu5sMDym-ExJt1OMSp_CIFw', 'IDP_NAME': 'ITBI Hub', 'IDP_LOGO': '//homecredit.vn/img/logo-hc-main.png', 'SERVICE_PROVIDER': 'Try on Grafana Signin', 'SERVICE_PROVIDER_URL': 'https://grafana.itbi-group.com/', 'STATIC_URL': '/static/', 'LANGUAGE_CODE': 'en-us', 'SITE_BASE_URL': 'https://itbi-group.com'}}, {}, {'view': <dl_user.views.IndexView object at 0x7ff4c28c7350>}]
+INFO "GET / HTTP/1.1" 200 5702
+WARNING Not Found: /static/images/grafana_logo.png
+WARNING Not Found: /static/images/kibana_logo.png
+WARNING Not Found: /static/images/jupyterhub_logo.png
+WARNING "GET /static/images/grafana_logo.png HTTP/1.1" 404 104
+WARNING "GET /static/images/kibana_logo.png HTTP/1.1" 404 103
+WARNING Not Found: /static/images/code_server_logo.png
+WARNING "GET /static/images/jupyterhub_logo.png HTTP/1.1" 404 107
+WARNING Not Found: /static/images/roundcube_logo.png
+WARNING Not Found: /static/images/superset_logo.png
+WARNING Not Found: /static/images/airflow_logo.png
+WARNING "GET /static/images/code_server_logo.png HTTP/1.1" 404 108
+WARNING "GET /static/images/roundcube_logo.png HTTP/1.1" 404 106
+WARNING "GET /static/images/superset_logo.png HTTP/1.1" 404 105
+WARNING "GET /static/images/airflow_logo.png HTTP/1.1" 404 104
+WARNING Not Found: /favicon.ico
+WARNING "GET /favicon.ico HTTP/1.1" 404 85
+DEBUG Exception while resolving variable 'LANGUAGE_CODE' in template 'dl_user/home.html'.
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [LANGUAGE_CODE] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7ff4c2b4bf80>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7ff4c2b4bdd0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7ff4c28e0a50>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7ff4c28c25d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'settings': {'RECAPTCHA_PUBLIC_KEY': '6Le9-ccUAAAAAEONxfu5sMDym-ExJt1OMSp_CIFw', 'IDP_NAME': 'ITBI Hub', 'IDP_LOGO': '//homecredit.vn/img/logo-hc-main.png', 'SERVICE_PROVIDER': 'Try on Grafana Signin', 'SERVICE_PROVIDER_URL': 'https://grafana.itbi-group.com/', 'STATIC_URL': '/static/', 'LANGUAGE_CODE': 'en-us', 'SITE_BASE_URL': 'https://itbi-group.com'}}, {}, {'view': <dl_user.views.IndexView object at 0x7ff4c28e0690>}]
+INFO "GET / HTTP/1.1" 200 5702
+WARNING Not Found: /static/images/grafana_logo.png
+WARNING Not Found: /static/images/kibana_logo.png
+WARNING "GET /static/images/grafana_logo.png HTTP/1.1" 404 104
+WARNING "GET /static/images/kibana_logo.png HTTP/1.1" 404 103
+WARNING Not Found: /static/images/jupyterhub_logo.png
+WARNING Not Found: /static/images/code_server_logo.png
+WARNING Not Found: /static/images/roundcube_logo.png
+WARNING "GET /static/images/jupyterhub_logo.png HTTP/1.1" 404 107
+WARNING "GET /static/images/code_server_logo.png HTTP/1.1" 404 108
+WARNING Not Found: /static/images/superset_logo.png
+WARNING Not Found: /static/images/airflow_logo.png
+WARNING "GET /static/images/roundcube_logo.png HTTP/1.1" 404 106
+WARNING "GET /static/images/superset_logo.png HTTP/1.1" 404 105
+WARNING "GET /static/images/airflow_logo.png HTTP/1.1" 404 104
+DEBUG Exception while resolving variable 'LANGUAGE_CODE' in template 'dl_user/home.html'.
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 835, in _resolve_lookup
+    current = current[bit]
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 841, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 849, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'LANGUAGE_CODE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vanducng/.local/share/virtualenvs/openldap-management-django-tvbifzrT/lib/python3.7/site-packages/django/template/base.py", line 856, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [LANGUAGE_CODE] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7ff4c28e9290>>, 'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x7ff4c28e9200>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7ff4c28eff90>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7ff4c2b57a90>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}, 'settings': {'RECAPTCHA_PUBLIC_KEY': '6Le9-ccUAAAAAEONxfu5sMDym-ExJt1OMSp_CIFw', 'IDP_NAME': 'ITBI Hub', 'IDP_LOGO': '//homecredit.vn/img/logo-hc-main.png', 'SERVICE_PROVIDER': 'Try on Grafana Signin', 'SERVICE_PROVIDER_URL': 'https://grafana.itbi-group.com/', 'STATIC_URL': '/static/', 'LANGUAGE_CODE': 'en-us', 'SITE_BASE_URL': 'https://itbi-group.com'}}, {}, {'view': <dl_user.views.IndexView object at 0x7ff4c28efbd0>}]
+INFO "GET / HTTP/1.1" 200 5702
+WARNING Not Found: /static/images/grafana_logo.png
+WARNING "GET /static/images/grafana_logo.png HTTP/1.1" 404 104
+WARNING Not Found: /static/images/kibana_logo.png
+WARNING Not Found: /static/images/jupyterhub_logo.png
+WARNING "GET /static/images/kibana_logo.png HTTP/1.1" 404 103
+WARNING "GET /static/images/jupyterhub_logo.png HTTP/1.1" 404 107
+WARNING Not Found: /static/images/code_server_logo.png
+WARNING Not Found: /static/images/roundcube_logo.png
+WARNING Not Found: /static/images/superset_logo.png
+WARNING "GET /static/images/code_server_logo.png HTTP/1.1" 404 108
+WARNING "GET /static/images/roundcube_logo.png HTTP/1.1" 404 106
+WARNING "GET /static/images/superset_logo.png HTTP/1.1" 404 105
+WARNING Not Found: /static/images/airflow_logo.png
+WARNING "GET /static/images/airflow_logo.png HTTP/1.1" 404 104
